@@ -13,6 +13,7 @@ router.post("/users", UsersController.postNew);
 router.get("/connect", AuthController.getConnect);
 router.get("/disconnect", AuthController.getDisconnect);
 router.get("/users/me", UsersController.getMe);
+router.get("/files/:id/data", FilesController.getFile);
 router.post("/files", FilesController.postUpload);
 router.get("/files", FilesController.getIndex);
 router.post("/files/:id", FilesController.getShow);
